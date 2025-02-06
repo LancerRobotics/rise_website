@@ -31,6 +31,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="images/rise-logo.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/rise-logo.png">
 <link rel="shortcut icon" href="images/rise-logo.png">
+<!-- https://www.figma.com/design/bH9kkWq3Uy2YDcXDogIyaH/Rise-Logo?m=auto&t=VEkLJ54ST0KvTQGn-1 -->
+
 
 </head>
 
@@ -281,6 +283,18 @@
   <!-- end service section -->
 
   <!-- contact section -->
+  <script src="js/email.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+
+    const publicKey = "LhBca9oBylL3Kqd6E";
+
+    (function(){
+        emailjs.init({
+          publicKey: publicKey,
+        });
+    })();
+  </script>
 
   <section class="contact_section layout_padding" id="contact-us">
     <div class="container">
@@ -291,21 +305,22 @@
       </div>
       <div class="row">
         <div class="col-md-6">
-          <form action="" style="color: black">
+          <form action="" style="color: black" onsubmit="sendMail()">
             <div>
-              <input type="text" placeholder="Name" />
+              <input type="text" id="name" placeholder="Name" required/>
             </div>
             <div>
-              <input type="text" placeholder="Phone Number" />
+              <input type="text" id="phone_number" placeholder="Phone Number" required/>
             </div>
             <div>
-              <input type="email" placeholder="Email" />
+              <input type="email" id="email" placeholder="Email" required/>
             </div>
             <div>
-              <input type="text" class="message-box" placeholder="Message" />
+              <!--<input type="text" id="message" class="message-box" placeholder="Message" onkeydown="" required/>-->
+              <textarea type="text" id="message" class="message-box" placeholder="Message" onkeydown="" required></textarea>
             </div>
             <div class="d-flex ">
-              <button onclick="alert('This contact form is not yet designed to send its information to RISE. Please check our Github for more updates.')">
+              <button type="submit">
                 SEND
               </button>
             </div>
@@ -370,9 +385,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
   <script src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-  <!-- End Google Map -->
 
 
 </body>
