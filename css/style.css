@@ -288,6 +288,10 @@ a:focus {
           align-items: center;
   background-size: cover;
   background-position: bottom;
+
+  min-height: 500px;
+  position: relative;
+  margin-bottom: 75px;
 }
 
 .slider_section .row {
@@ -334,7 +338,11 @@ a:focus {
 }
 
 .slider_section .img-box img {
-  width: 100%;
+  max-height: 400px;
+  width: auto;
+  object-fit: contain;
+  align-self: center;
+  justify-content: center;
 }
 
 .feature_section {
