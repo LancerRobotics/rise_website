@@ -494,6 +494,7 @@ a:focus {
 }
 
 .professional_section .detail-box a:hover {
+  cursor: pointer;
   background-color: #FFFFFF;
 }
 
@@ -863,12 +864,28 @@ a:focus {
 
 /* Custom css by Alan Muttappillil @alm0st01*/
 
+.professional_section.layout_padding.support_us .img-box {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transform: scale(0.95);
+}
+
 .professional_section.layout_padding.support_us .img-box img {
-  max-height: 400px;
-  width: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 3%;
 }
 
 .professional_section.layout_padding.support_us .img-box img:hover {
   cursor: pointer;
+  transform: scale(1.05);
 }
