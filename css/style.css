@@ -442,8 +442,8 @@ a:focus {
   font-family: 'Merriweather Sans', sans-serif;
   text-transform: uppercase;
   padding: 10px 45px;
-  background-color: #f2ebc7;
-  border: 1px solid #f2ebc7;
+  background-color: #D6CFAF;
+  border: 1px solid #D6CFAF;
   border-radius: 2px;
   color: #000000;
 }
@@ -487,15 +487,14 @@ a:focus {
   font-family: 'Merriweather Sans', sans-serif;
   text-transform: uppercase;
   padding: 10px 45px;
-  background-color: #ff8a1d;
-  border: 1px solid #ff8a1d;
+  background-color: #D6CFAF;
+  border: 1px solid #D6CFAF;
   border-radius: 2px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .professional_section .detail-box a:hover {
-  background-color: transparent;
-  color: #ff8a1d;
+  background-color: #FFFFFF;
 }
 
 .service_section {
@@ -860,3 +859,16 @@ a:focus {
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
+
+
+/* Custom css by Alan Muttappillil @alm0st01*/
+
+.professional_section.layout_padding.support_us .img-box img {
+  max-height: 400px;
+  width: auto;
+  cursor: pointer;
+}
+
+.professional_section.layout_padding.support_us .img-box img:hover {
+  cursor: pointer;
+}
